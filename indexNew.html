@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel='icon' href='dagher_logo_ico.ico' type='image/x-icon'/ >
+	<title>Dagher Engineering Intranet</title>
+
+	<script>
+
+	$(document).ready(function(){
+
+		$('a').on('click', function(){
+			var target = $(this).attr('rel');
+			$("."+target).show().siblings("div").hide();
+		});
+
+	});
+
+	</script>
+
+	<link rel="stylesheet" href="index.css">
+	<style>
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+		font-size:12pt;
+	}
+	</style>
+
+</head>
+
+<body>
+	<div class="fullSite">
+
+		<div class = "header">
+			<div class = "headerLogo">
+				<a href="main.html" target= main rel="home"><img src="dagher_logo_new2.png" style="width:285px;height:66px;"></a>
+			</div>
+
+			<div class="headerTabs">
+				<div class="dropdown"> <a href="main.html" target=main rel="home" class = "dropbtn"> HOME </a> </div>
+
+				<div class="dropdown"> 
+					<a href="#" rel="trades" class = "dropbtn"> TRADES </a>
+
+					<div class = "dropdown-content">
+						<a href="mechanical.html" rel="trades" target=main>Mechanical</a>
+						<a href="electrical.html" rel="trades" target=main>Electrical</a>
+						<a href="firealarm.html" rel="trades" target=main>Fire Alarm</a>
+						<a href="plumbing.html" rel="trades" target=main>Plumbing</a>
+						<a href="fireprot.html" rel="trades" target=main>Fire Protection</a>
+						<a href="alltrades.html" rel="trades" target=main>All-Trades</a>
+						<a href="https://docs.google.com/spreadsheets/d/1Kmrm8EuUjGv2YaBocp_N8w2YELC_woUlH0pswzN8I9U/pubhtml" rel="trades" target=main>Library Catalog</a>
+						<a href="LEED5.html" rel="trades" target=main>LEED</a>
+						<a href="SI info.html" rel="trades" target=main>Special Inspections</a>
+						<a href="Progress Inspections (TR-8).html" rel="trades" target=main>Progress Inspections/ Energy Code</a>
+						<a href="commissioning.html" rel="trades" target=main>Commissioning</a>
+  					</div>
+
+				</div>
+
+				<div class="dropdown"> 
+					<a href="#" rel="destandards" class = "dropbtn"> DE STANDARDS </a>
+
+					<div class = "dropdown-content">
+						<a href="offstand.html" rel="destandards" target=main>Office Standards</a>
+						<a href="http://10.0.0.29/" rel="destandards" target="_blank">Shop Drawings Log</a>
+						<a href="http://dagher-file/WS2019/default.aspx" rel="destandards" target="_blank">BillQuick WebSuite 2019</a>
+						<a href="http://www.lynda.com" rel="destandards" target="_blank">Lynda.com Training</a>
+						<a href="https://www.ishipdocs.com/ishipdocscabinet/Cabinet/DropFiles.aspx?key=KKplegIxYxRYbbM7gKtyun/ezO%40y0piq0LGJhMJuD1/kNNbzQImxkftahCtevMG5&rkey=x9c9yEA92qM5VAjyictViQ%3D%3D&tappid=uAySZ3Y1AXM%3D" rel="destandards" target="_blank">BPI Repro Printing</a>
+						<a href="Phone Extensions (For Staff).pdf" rel="destandards" target=main>Employee Directory</a>
+						<a href="holiday_schedule.pdf" rel="destandards" target=main>Holiday Calendar</a>
+						<a href="ehandbook.pdf" rel="destandards" target=main>Employee Handbook</a>
+						<a href="../Company%20Forms" rel="destandards" target=main>Forms</a>
+						<a href="howto.html" rel="destandards" target=main>How-To</a>
+						<a href="http://10.0.0.29/timeline/list.php" rel="destandards" target=main>Project List</a>
+						<a href="http://10.0.0.29/timeline" rel="destandards" target=main>Project Timeline</a>
+						<a href="DEStand/OffStand/plotterlog.html" rel="destandards" target=main>Plotter Log</a>
+						<a href="\\Tds400-19905\tsscan" rel="destandards" target=main>Plotter Scan Files</a>
+						<a href="I:\Presentations" rel="destandards" target="main">Presentations</a>
+						<a href="Employee Presentation Schedule.pdf" rel="destandards" target="main">Staff Presentation Schedule</a>
+						<a href="Job Satisfaction.htm" rel="destandards" target="main">Job Satisfaction</a>
+						<a href="ACEC New York Lobbying Law Guidelines.pdf" rel="destandards" target="main">Public Policy</a>
+					
+  					</div>
+  					
+				</div>
+
+				<div class="dropdown"> 
+					<a href="#" rel="cadstandards" class = "dropbtn"> CAD STANDARDS </a>
+
+					<div class = "dropdown-content">
+						<a href="CADStandards/tipntricks.html" rel="cadstandards" target=main>Tips &amp; Tricks</a>
+						<a href="CADStandards/abs_docs.html" rel="cadstandards" target=main>Drawing Setup</a>
+						
+  					</div>
+  					
+				</div>
+
+				<div class="dropdown"> 
+					<a href="#" rel="helpfullinks" class = "dropbtn"> HELPFUL LINKS </a>
+
+					<div class = "dropdown-content">
+						<a href="Helpful Links.htm" rel="helpfullinks" target=main> Links </a> 
+						<a href="about.html" rel="helpfullinks" target=main>About Us</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = "row">
+			<div class = "leftNav"> 
+				<div class = "home">
+					<b>HOME</b>
+					<a href="#" class = "buttonLeft" rel = "trades">Trades</a>
+					<a href="#" class = "buttonLeft" rel = "destandards">DE Standards</a>
+					<a href="#" class = "buttonLeft" rel= "cadstandards">CAD Standards</a>
+					<a href="Helpful Links.htm" target=main class = "buttonLeft" rel = "helpfullinks">Helpful Links</a>
+				</div>
+
+				<div class="trades">
+					<b>TRADES</b>
+					<a href="mechanical.html" class = "buttonLeft" target=main>Mechanical</a>
+					<a href="electrical.html" class = "buttonLeft" target=main>Electrical</a>
+					<a href="firealarm.html" class = "buttonLeft" target=main>Fire Alarm</a>
+					<a href="plumbing.html" class = "buttonLeft" target=main>Plumbing</a>
+					<a href="fireprot.html" class = "buttonLeft" target=main>Fire Protection</a>
+					<a href="alltrades.html" class = "buttonLeft" target=main>All-Trades</a>
+					<a href="https://docs.google.com/spreadsheets/d/1Kmrm8EuUjGv2YaBocp_N8w2YELC_woUlH0pswzN8I9U/pubhtml" class = "buttonLeft" target=main>Library Catalog</a>
+					<a href="LEED5.html" class = "buttonLeft" target=main>LEED</a>
+					<a href="SI info.html" class = "buttonLeft" target=main>Special Inspections</a>
+					<a href="Progress Inspections (TR-8).html" class = "buttonLeft" target=main>Progress Inspections/ Energy Code</a>
+					<a href="commissioning.html" class = "buttonLeft" target=main>Commissioning</a>
+					
+				</div>
+
+				<div class="destandards">
+					<b>DE STANDARDS</b>
+					<a href="offstand.html" class = "buttonLeft" target=main>Office Standards</a>
+					<a href="http://10.0.0.29/" class = "buttonLeft" target="_blank">Shop Drawings Log</a>
+					<a href="http://dagher-file/WS2019/default.aspx" class = "buttonLeft" target="_blank">BillQuick WebSuite 2019</a>
+					<a href="http://www.lynda.com" class = "buttonLeft" target="_blank">Lynda.com Training</a>
+					<a href="https://www.ishipdocs.com/ishipdocscabinet/Cabinet/DropFiles.aspx?key=KKplegIxYxRYbbM7gKtyun/ezO%40y0piq0LGJhMJuD1/kNNbzQImxkftahCtevMG5&rkey=x9c9yEA92qM5VAjyictViQ%3D%3D&tappid=uAySZ3Y1AXM%3D" class = "buttonLeft" target="_blank">BPI Repro Printing</a>
+					<a href="Phone Extensions (For Staff).pdf" class = "buttonLeft" target=main>Employee Directory</a>
+					<a href="holiday_schedule.pdf" class = "buttonLeft" target=main>Holiday Calendar</a>
+					<a href="ehandbook.pdf" class = "buttonLeft" target=main>Employee Handbook</a>
+					<a href="../Company%20Forms" class = "buttonLeft" target=main>Forms</a>
+					<a href="howto.html" class = "buttonLeft" target=main>How-To</a>
+					<a href="http://10.0.0.29/timeline/list.php" class = "buttonLeft" target=main>Project List</a>
+					<a href="http://10.0.0.29/timeline" class = "buttonLeft" target=main>Project Timeline</a>
+					<a href="DEStand/OffStand/plotterlog.html" class = "buttonLeft" target=main>Plotter Log</a>
+					<a href="\\Tds400-19905\tsscan" class = "buttonLeft" target=main>Plotter Scan Files</a>
+					<a href="I:\Presentations" class = "buttonLeft" target="main">Presentations</a>
+					<a href="Employee Presentation Schedule.pdf" class = "buttonLeft" target="main">Staff Presentation Schedule</a>
+					<a href="Job Satisfaction.htm" class = "buttonLeft" target="main">Job Satisfaction</a>
+					<a href="ACEC New York Lobbying Law Guidelines.pdf" class = "buttonLeft" target="main">Public Policy</a>
+					
+				</div>
+
+				<div class="cadstandards">
+					<b>CAD STANDARDS</b>
+					<a href="CADStandards/tipntricks.html" class = "buttonLeft" target=main>Tips &amp; Tricks</a>
+					<a href="CADStandards/abs_docs.html" class = "buttonLeft" target=main>Drawing Setup</a>
+					<br>
+				</div>
+
+				<div class="helpfullinks">
+					<b>HELPFUL LINKS</b>
+					<a href="Helpful Links.htm" class = "buttonLeft" target=main> Links </a>
+					<a href="about.html" class = "buttonLeft" target=main>About Us</a>
+				</div>
+
+			</div>
+
+			<div class ="mainFrame">		
+				<iframe src="main.html" name = main noresize></iframe>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+
+</html>
